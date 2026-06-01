@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta
+name="description"
+content="Portfolio Bub — Artist, Developer, Creator">
+
+<meta
+property="og:title"
+content="BUB.EXE">
+
+<meta
+property="og:description"
+content="Creative Portfolio">
+
+<meta
+property="og:type"
+content="website">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BUB.EXE</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+<div id="progress"></div>
+<div id="command">
+
+<input
+type="text"
+placeholder="Search..."
+>
+
+</div>
+<div class="logo">
+BUB.EXE
+</div>
+
+<nav>
+
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+
+<button id="theme-toggle">
+🌙
+</button>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-left">
+
+<div class="badge">
+AVAILABLE FOR CREATIVE PROJECTS
+</div>
+
+<h1>
+BUB.EXE
+</h1>
+
+<p class="subtitle">
+
+Artist, Developer, dan
+orang yang terlalu sering
+mengubah ide random menjadi project.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="btn">
+PROJECTS
+</a>
+
+<a href="#contact" class="btn secondary">
+CONTACT
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="profile-card">
+
+<div class="profile-header">
+
+SYSTEM PROFILE
+
+</div>
+
+<div class="profile-content">
+
+<p><strong>NAME</strong> : Bub</p>
+<p><strong>ROLE</strong> : Artist</p>
+<p><strong>STATUS</strong> : Online</p>
+<p><strong>FOCUS</strong> : Web & Art</p>
+<p><strong>PROJECTS</strong> : 12+</p>
+<p><strong>ARTWORKS</strong> : 50+</p>
+<div class="avatar">
+
+BUB
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>ABOUT</h2>
+
+<div class="about-box">
+
+Halo, aku Bub.
+
+Aku suka membuat website, bot,
+dan karya visual digital.
+Portfolio ini adalah tempat
+semua proyek kreatifku berkumpul.
+
+</div>
+
+</section>
+<section class="terminal-section">
+
+<div class="terminal">
+
+<div class="terminal-top">
+
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+<div class="terminal-body">
+
+<p>> whoami</p>
+<p>Bub</p>
+
+<br>
+
+<p>> role</p>
+<p>Artist / Developer</p>
+
+<br>
+
+<p>> current_status</p>
+<p>Building random things...</p>
+
+<br>
+
+<p>> favorite_activity</p>
+<p>Turning ideas into projects.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>PROJECTS</h2>
+
+<div class="project-grid">
+
+<a href="projects/yukina.html" class="project yellow">
+</a>
+
+<h3>YUKINA BOT</h3>
+
+<p>
+WhatsApp Bot dengan berbagai fitur.
+</p>
+
+</div>
+
+<div class="project purple">
+
+<h3>ARTWORK</h3>
+
+<p>
+Kumpulan ilustrasi digital.
+</p>
+
+</div>
+
+<div class="project green">
+
+<h3>WEB LAB</h3>
+
+<p>
+Eksperimen frontend dan UI.
+</p>
+
+</div>
+
+<div class="project red">
+
+<h3>AI PROJECT</h3>
+
+<p>
+Eksperimen AI dan karakter virtual.
+</p>
+
+</div>
+
+</div>
+
+</section>
+<section id="artwork">
+
+<h2>ARTWORK GALLERY</h2>
+
+<div class="gallery">
+<div id="lightbox">
+
+    <span id="close-lightbox">
+        ✕
+    </span>
+
+    <img id="lightbox-img" src="" alt="">
+
+</div>
+<div class="art-card">
+<img src="assets/images/art1.jpg" alt="">
+</div>
+
+<div class="art-card">
+<img src="assets/images/art2.jpg" alt="">
+</div>
+
+<div class="art-card">
+<img src="assets/images/art3.jpg" alt="">
+</div>
+
+<div class="art-card">
+<img src="assets/images/art4.jpg" alt="">
+</div>
+
+<div class="art-card">
+<img src="assets/images/art5.jpg" alt="">
+</div>
+
+<div class="art-card">
+<img src="assets/images/art6.jpg" alt="">
+</div>
+
+</div>
+
+</section>
+<div class="socials">
+
+<a href="#">GitHub</a>
+<a href="#">Instagram</a>
+<a href="#">Discord</a>
+
+</div>
+<footer>
+
+<h2>BUB.EXE</h2>
+
+<p>
+Made with curiosity and
+questionable sleep schedule.
+</p>
+
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
+#lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.9);
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+
+    padding:30px;
+
+}
+
+#lightbox.active{
+
+    display:flex;
+
+}
+
+#lightbox-img{
+
+    max-width:90%;
+    max-height:90%;
+
+    border:5px solid white;
+
+}
+
+#close-lightbox{
+
+    position:absolute;
+
+    top:30px;
+    right:40px;
+
+    color:white;
+
+    font-size:3rem;
+
+    cursor:pointer;
+
+    font-weight:800;
+
+}
+<script src="main.js"></script>
